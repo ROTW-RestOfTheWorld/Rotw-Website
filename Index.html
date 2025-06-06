@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTW: Rest Of The World - Bloxburg Football™ | S12</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>ROTW</h1>
+                <span class="subtitle">Rest Of The World - Bloxburg Football™</span>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="en">
+                    <img src="/eng.png" alt="English" class="flag-icon">
+                    EN
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <img src="/esp.png" alt="Spanish" class="flag-icon">
+                    ES
+                </button>
+                <button class="lang-btn" data-lang="fr">
+                    <img src="/fra.png" alt="French" class="flag-icon">
+                    FR
+                </button>
+                <button class="lang-btn" data-lang="nl">
+                    <img src="/ned.png" alt="Dutch" class="flag-icon">
+                    NL
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="overview" data-key="tab-overview">Overview</button>
+                <button class="tab-btn" data-tab="leagues" data-key="tab-leagues">Leagues</button>
+                <button class="tab-btn" data-tab="cup" data-key="tab-cup">ROTW Cup</button>
+                <button class="tab-btn" data-tab="history" data-key="tab-history">History</button>
+                <button class="tab-btn" data-tab="winners" data-key="tab-winners">Winners</button>
+                <button class="tab-btn" data-tab="bb-news" data-key="tab-bb-news">BB News</button>
+                <button class="tab-btn" data-tab="founders" data-key="tab-founders">Leadership</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="tab-content active" id="overview">
+            <section class="hero">
+                <div class="container">
+                    <img src="/Rotw+Background.png" alt="ROTW Logo" class="main-logo">
+                    <h2 class="season-title" data-key="season-title">Season 12</h2>
+                    <p class="hero-description" data-key="hero-description">The premier football competition in Bloxburg</p>
+                </div>
+            </section>
+
+            <section class="countdown-section">
+                <div class="container">
+                    <h2 class="section-title" data-key="cup-final-title" style="color: white;">ROTW Cup Final</h2>
+                    <div class="countdown-container">
+                        <div class="final-info">
+                            <h3>Gold FC vs Legia</h3>
+                            <p data-key="final-venue">RC Lens Stadium (Neutral)</p>
+                            <p data-key="final-location">Neighbourhood: Quwerkyturkey</p>
+                            <p data-key="final-time">9PM UK Time</p>
+                        </div>
+                        <div class="countdown-timer">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">00</span>
+                                <span class="countdown-label" data-key="days">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">00</span>
+                                <span class="countdown-label" data-key="hours">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">00</span>
+                                <span class="countdown-label" data-key="minutes">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">00</span>
+                                <span class="countdown-label" data-key="seconds">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="leagues">
+            <section class="leagues-section">
+                <div class="container">
+                    <h2 class="section-title" data-key="leagues-title">League Structure</h2>
+                    
+                    <div class="league-grid">
+                        <div class="league-card">
+                            <div class="league-header">
+                                <img src="/Rotw A.png" alt="A League Logo" class="league-logo">
+                                <div class="league-title-group">
+                                    <h3>A League</h3>
+                                    <span class="league-tier" data-key="tier-elite">Elite Tier</span>
+                                </div>
+                            </div>
+                            <div class="league-info">
+                                <p data-key="a-league-desc">The highest level of competition featuring the most skilled teams and players in ROTW.</p>
+                                <div class="league-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">12</span>
+                                        <span class="stat-label" data-key="teams">Teams</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">22</span>
+                                        <span class="stat-label" data-key="matches">Matches</span>
+                                    </div>
+                                </div>
+                                <div class="league-runner">
+                                    <span data-key="league-runner">League Runner:</span> <strong>iilevi</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="league-card">
+                            <div class="league-header">
+                                <img src="/Rotw B.png" alt="B League Logo" class="league-logo">
+                                <div class="league-title-group">
+                                    <h3>B League</h3>
+                                    <span class="league-tier" data-key="tier-competitive">Competitive Tier</span>
+                                </div>
+                            </div>
+                            <div class="league-info">
+                                <p data-key="b-league-desc">The middle tier offering competitive gameplay for developing teams and aspiring players.</p>
+                                <div class="league-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">10</span>
+                                        <span class="stat-label" data-key="teams">Teams</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">18</span>
+                                        <span class="stat-label" data-key="matches">Matches</span>
+                                    </div>
+                                </div>
+                                <div class="league-runner">
+                                    <span data-key="league-runner">League Runner:</span> <strong>Moz</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="league-card">
+                            <div class="league-header">
+                                <img src="/Rotw C.png" alt="C League Logo" class="league-logo">
+                                <div class="league-title-group">
+                                    <h3>C League</h3>
+                                    <span class="league-tier" data-key="tier-development">Development Tier</span>
+                                </div>
+                            </div>
+                            <div class="league-info">
+                                <p data-key="c-league-desc">The entry-level league perfect for newcomers and teams building their foundation.</p>
+                                <div class="league-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">10</span>
+                                        <span class="stat-label" data-key="teams">Teams</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">18</span>
+                                        <span class="stat-label" data-key="matches">Matches</span>
+                                    </div>
+                                </div>
+                                <div class="league-runner">
+                                    <span data-key="league-runner">League Runner:</span> <strong>iilevi</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="cup">
+            <section class="cup-section">
+                <div class="container">
+                    <h2 class="section-title" data-key="cup-title">ROTW Cup</h2>
+                    <div class="cup-content">
+                        <div class="cup-info">
+                            <h3 data-key="cup-subtitle">The Ultimate Championship</h3>
+                            <p data-key="cup-desc-1">The ROTW Cup is the most prestigious tournament in Bloxburg Football, bringing together the best teams from all leagues in an epic knockout competition.</p>
+                            <p data-key="cup-desc-2">Teams battle through multiple rounds of intense matches, with only the strongest surviving to claim the ultimate prize and eternal glory.</p>
+                            
+                            <div class="cup-features">
+                                <div class="feature">
+                                    <h4 data-key="format-title">Format</h4>
+                                    <p data-key="format-desc">Last 16 to QF: 1 leg, SF: 2 legs, Final: 1 leg</p>
+                                </div>
+                                <div class="feature">
+                                    <h4 data-key="participants-title">Participants</h4>
+                                    <p data-key="participants-desc">All A league teams, 3 B and 3 C teams (16 total)</p>
+                                </div>
+                                <div class="feature">
+                                    <h4 data-key="prize-title">Prize</h4>
+                                    <p data-key="prize-desc">ROTW Cup Trophy</p>
+                                </div>
+                                <div class="feature">
+                                    <h4 data-key="cup-runner-title">Cup Runner</h4>
+                                    <p><strong>iilevi</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="history">
+            <section class="history-section">
+                <div class="container">
+                    <h2 class="section-title" data-key="history-title">League & Cup History</h2>
+                    
+                    <div class="history-grid">
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 1</h3>
+                                <img src="/Rotw.png" alt="ROTW Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">Main League</span>
+                                    <span class="champion">'The Invincibles' - Mainz</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">FC Barcelona</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 2</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'Dublin Underdogs' - UCD</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'The Unlikely Champions' - Galatasaray</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'Trust the Academy' - Hannover 96 Academy</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'Back 2 Back' - FC Barcelona</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 3</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'Against All Odds' - Standard Liege</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'Dutch Powerhouse' - Ajax</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'Italian Giants' - Juventus</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Prodigy</span>
+                                    <span class="champion">'Unstoppable' - Fiorentina</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'Rome Stands Tall' - Roma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 4</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'French Fanatics' - RC Lens</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'Dortmund Domination' - Dortmund</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'Southern Coast Conquerers' - Malaga</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Prodigy</span>
+                                    <span class="champion">'Mini Germans' - Dortmund II</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'The Double' - Malaga</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">League Cup</span>
+                                    <span class="champion">'Amsterdam Stands Strong' - Ajax</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 5</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'90+7' - Mainz 05</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'German Greatness' - Frankfurt</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'The Lion Roars' - Red Lions</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Prodigy League</span>
+                                    <span class="champion">'Mini Lions' - Red Lions II</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'Espalda Con Espalda' - Malaga</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">League Cup</span>
+                                    <span class="champion">'Die Erlösung' - Mainz 05</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 6</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'In an Amsterdam Stronghold' - Ajax</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'I Am The Resurrection' - RC Lens</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'Istanbul Vanquishers' - Galatasaray</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Prodigy League</span>
+                                    <span class="champion">'Rags to Riches' - Titans FC</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'Irish History' - Athlone Town</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">League Cup</span>
+                                    <span class="champion">'Everlasting Reign' - Galatasaray</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Vyliix Cup</span>
+                                    <span class="champion">'A Rollercoaster of Emotions' - Club Brugge</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 7</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'At the Death' - Dortmund</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'Les Invincibles' - Leverkusen</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'Two of a Kind' - Titans FC</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Prodigy League</span>
+                                    <span class="champion">'Academy Goes Big' - Dortmund II</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'Italian Powerhouse' - Inter Milan</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Selo Cup</span>
+                                    <span class="champion">'End To End' - Lecco</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="season-card">
+                            <div class="season-header">
+                                <h3>Season 8</h3>
+                                <img src="/Rotw A.png" alt="A League Logo" class="season-logo">
+                            </div>
+                            <div class="season-results">
+                                <div class="result">
+                                    <span class="competition">A League</span>
+                                    <span class="champion">'Roman Gods' - AS Roma</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">B League</span>
+                                    <span class="champion">'Swedish Dominance' - Malmö</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">C League</span>
+                                    <span class="champion">'5-Star Club' - Malaga</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Prodigy League</span>
+                                    <span class="champion">'The Kids of France' - Guingamp</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">Cup</span>
+                                    <span class="champion">'Caught Beneath a Landslide' - Almeria</span>
+                                </div>
+                                <div class="result">
+                                    <span class="competition">BFC Cup</span>
+                                    <span class="champion">'ROTW's Finest' - Malaga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="winners">
+            <section class="winners-section">
+                <div class="container">
+                    <h2 class="section-title" data-key="winners-title">All-Time Competition Winners (S1 - S11)</h2>
+                    <p class="winners-subtitle" data-key="winners-subtitle"⭐️ = 1 piece of silverware</p>
+                    
+                    <div class="winners-grid">
+                        <div class="winner-card top-tier">
+                            <h3>Malaga CF 🇪🇸</h3>
+                            <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card top-tier">
+                            <h3>Mainz 05 🇩🇪</h3>
+                            <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card high-tier">
+                            <h3>Ajax 🇳🇱</h3>
+                            <div class="stars">⭐️⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card high-tier">
+                            <h3>Titans FC 🇺🇸</h3>
+                            <div class="stars">⭐️⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card mid-tier">
+                            <h3>Galatasaray 🇹🇷</h3>
+                            <div class="stars">⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card mid-tier">
+                            <h3>Guingamp 🇫🇷</h3>
+                            <div class="stars">⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card mid-tier">
+                            <h3>RC Lens 🇫🇷</h3>
+                            <div class="stars">⭐️⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card low-tier">
+                            <h3>FC Barcelona 🇪🇸</h3>
+                            <div class="stars">⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card low-tier">
+                            <h3>Dortmund 🇩🇪</h3>
+                            <div class="stars">⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card low-tier">
+                            <h3>Dortmund II 🇩🇪</h3>
+                            <div class="stars">⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card low-tier">
+                            <h3>AS Roma 🇮🇹</h3>
+                            <div class="stars">⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card low-tier">
+                            <h3>Lecco 🇮🇹</h3>
+                            <div class="stars">⭐️⭐️</div>
+                        </div>
+                        <div class="winner-card low-tier">
+                            <h3>Norrkoping 🇸🇪</h3>
+                            <div class="stars">⭐️⭐️</div>
+                            <span class="recent-winner">(S12 C League Winner)</span>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>UCD 🇮🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Hannover 96 Academy 🇩🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Standard Liege 🇧🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Juventus 🇮🇹</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Fiorentina 🇮🇹</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Frankfurt 🇩🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Red Lions 🇮🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Red Lions II 🇮🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Club Brugge 🇧🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Athlone Town 🇮🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Inter Milan 🇮🇹</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Leverkusen 🇩🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>UD Almeria 🇪🇸</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Malmö 🇸🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Orlando 🇺🇸</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Orlando B 🇺🇸</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Ajax B 🇳🇱</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                        <div class="winner-card single-tier">
+                            <h3>Shamrock Rovers 🇮🇪</h3>
+                            <div class="stars">⭐️</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="bb-news">
+            <section class="bb-news-section">
+                <div class="container">
+                    <div class="bb-news-content">
+                        <div class="bb-news-header">
+                            <img src="/Naamloos-Photoroom.png" alt="BB News Logo" class="bb-logo">
+                            <div class="bb-news-title">
+                                <h2 class="section-title" data-key="bb-news-title" style="color: white;">Official Broadcaster & Media Partner</h2>
+                                <p data-key="bb-owner">Owner: <strong>iilevi</strong></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bb-news-info">
+                            <p data-key="bb-news-desc">BB News is the official broadcasting and media partner of ROTW, bringing you comprehensive coverage of all league matches, cup competitions, and breaking football news from across the Bloxburg football community.</p>
+                            
+                            <div class="bb-features">
+                                <div class="bb-feature">
+                                    <h4 data-key="bb-coverage">Live Match Coverage</h4>
+                                    <p data-key="bb-coverage-desc">Watch every crucial moment</p>
+                                </div>
+                                <div class="bb-feature">
+                                    <h4 data-key="bb-analysis">Expert Analysis</h4>
+                                    <p data-key="bb-analysis-desc">In-depth tactical breakdowns</p>
+                                </div>
+                                <div class="bb-feature">
+                                    <h4 data-key="bb-broadcasting">Live Broadcasting</h4>
+                                    <p data-key="bb-broadcasting-desc">ROTW Cup Final live coverage</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-news-section">
+                            <h3 data-key="latest-news-title">Latest News</h3>
+                            <div class="news-item">
+                                <h4>Norrköping wins C league after a boring match</h4>
+                                <p>Today norrköping played vs number 2 in the league Legia. A Draw was enough for the championship. But bad news for norrköping too. They lost their winstreak.</p>
+                                <p><em>Congrats to norrköping from BB News.</em></p>
+                            </div>
+                        </div>
+
+                        <div class="live-stream-section">
+                            <h3 data-key="live-stream-title">Latest Live Stream</h3>
+                            <div class="stream-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/live_stream?channel=UCBloxburgNews-01" 
+                                    frameborder="0" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <p><a href="https://www.youtube.com/@BloxburgNews-01/streams" target="_blank" data-key="view-all-streams">View all BB News streams</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-content" id="founders">
+            <section class="founders-section">
+                <div class="container">
+                    <h2 class="section-title" data-key="founders-title">Leadership & Ownership</h2>
+                    
+                    <div class="leadership-grid">
+                        <div class="leadership-card">
+                            <h3 data-key="founders-subtitle">Founders</h3>
+                            <div class="person-list">
+                                <div class="person">
+                                    <h4>Moz</h4>
+                                    <p data-key="co-founder">Co-Founder</p>
+                                </div>
+                                <div class="person">
+                                    <h4>Jim</h4>
+                                    <p data-key="co-founder">Co-Founder</p>
+                                </div>
+                            </div>
+                            <p class="founding-text" data-key="founding-desc">The visionaries who established ROTW and built the foundation of Bloxburg's premier football league.</p>
+                        </div>
+
+                        <div class="leadership-card">
+                            <h3 data-key="ownership-subtitle">Current Ownership</h3>
+                            <div class="person-list">
+                                <div class="person">
+                                    <h4>Moz</h4>
+                                    <p data-key="owner">Owner</p>
+                                </div>
+                                <div class="person">
+                                    <h4>Jim</h4>
+                                    <p data-key="owner">Owner</p>
+                                </div>
+                                <div class="person">
+                                    <h4>inac</h4>
+                                    <p data-key="co-owner">Co-Owner</p>
+                                </div>
+                            </div>
+                            <p class="ownership-note" data-key="ownership-change">*Former owner Sam has transferred ownership to the current leadership team.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ROTW - Rest Of The World - Bloxburg Football™. <span data-key="footer-rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
